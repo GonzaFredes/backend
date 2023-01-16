@@ -6,7 +6,7 @@ const getProducts = async (req, res) => {
   if (!limite) {
     let productos = await Product.getProducts();
     if (productos.length == 0){
-      res.json({msg:"No Hay Productos"});
+      res.json({msg:"No hay productos"});
     }else{
       res.json(productos);
     }
@@ -23,7 +23,7 @@ const getProductId = async (req , res)=>{
   const pid = req.params.pid
   let product = await Product.getProductById(pid);
    if (!product){
-      res.json("product no encontrado")    
+      res.json("Producto no encontrado")    
    } else{
        res.json(product)  
  

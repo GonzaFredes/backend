@@ -89,7 +89,7 @@ class ProductManager {
       const newArrayProducts = this.Product.filter(
         (product) => product.id !== id);
       await writeFile(this.path, newArrayProducts);
-      return {msg: "El Producto se Elimino Corectamente"};;
+      return {msg: "El producto se eliminó correctamente"};;
     } else {
       return { msg:"El Producto a Eliminar no se encontro" };
     }

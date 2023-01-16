@@ -35,7 +35,7 @@ const readFile = async (path) => {
             return carts[id];
         } 
         else {
-           return ({ msg: "Carrito No encontrado"} );
+           return ({ msg: "Carrito no encontrado"} );
         }
       };
        
@@ -53,7 +53,7 @@ const readFile = async (path) => {
           await writeFile(this.path, carts);
           return carts
       } else {
-        return ({ msg: "Carrito No encontrado"} );
+        return ({ msg: "Carrito no encontrado"} );
       }
     }
  
